@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4dccbd;
+}
+
+header {
+  background-color: #231651;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  background-image: url("./resource/indra_image.jpg"); /* Ganti 'gambar_profil.jpg' dengan nama file gambar Anda */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /* Membuat lingkaran */
+  margin: 0 auto 20px; /* Posisikan gambar di tengah dan berjarak 20px dari bawah */
+}
+
+#about {
+  margin-bottom: 40px;
+}
+
+#skills {
+  background-color: #4dccbd; /* Warna latar belakang */
+  padding: 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center; /* Pusatkan keempat skill */
+}
+
+.skill {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan opasitas */
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+  display: inline-flex; /* Ubah ke inline-flex agar tetap dalam satu baris */
+  justify-content: center;
+  align-items: center;
+  color: #333; /* Warna teks */
+  text-align: center; /* Tengahkan teks */
+  font-size: 14px; /* Ukuran font */
+  margin: 0 20px; /* Jarak antar lingkaran */
+}
+
+#projects {
+  padding: 20px;
+}
+
+.project {
+  width: 45%; /* Atur lebar agar dua proyek dapat muat dalam satu baris */
+  display: inline-block; /* Agar proyek tampil secara horizontal */
+  vertical-align: top; /* Atur penempatan vertikal ke atas */
+  margin: 20px; /* Jarak antara proyek */
+}
+
+.project h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project img {
+  width: 100%; /* Gambar mengisi lebar div */
+  border-radius: 5px; /* Membuat sudut yang lebih lembut */
+}
+
+.project p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.project a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #231651;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
