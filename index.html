@@ -37,8 +37,10 @@
 
       /* Navbar */
       .navbar {
-        background-color: transparent !important;
+        background-color: rgba(20, 20, 20, 0.9) !important; /* Darker background with transparency */
+        backdrop-filter: blur(10px); /* Blur effect */
         padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
       }
 
       .navbar-brand {
@@ -51,11 +53,22 @@
         color: var(--light-color) !important;
         font-weight: 500;
         transition: all 0.3s ease;
+        padding: 10px 15px;
+        border-radius: 25px;
       }
 
       .nav-link:hover {
         color: var(--secondary-color) !important;
         text-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+      }
+
+      .navbar-toggler {
+        border-color: var(--primary-color); /* Neon cyan border */
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 255, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Neon cyan icon */
       }
 
       /* Hero Section */
@@ -158,6 +171,12 @@
 
       .project-card .card-body {
         padding: 25px;
+      }
+
+      .project-card .card-text {
+        color: var(--light-color);
+        opacity: 0.8;
+        margin-bottom: 20px; /* Add some space below the text */
       }
 
       .project-card .btn {
